@@ -1,0 +1,130 @@
+@use "../../var" as var;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url("/background_paper.jpg");
+  overflow: hidden;
+
+  &__title {
+    padding: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__love {
+    font-family: "Hello";
+    font-size: 70px;
+  }
+
+  &__img-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      max-height: 100%;
+    }
+  }
+}
+
+.plus-text {
+  position: absolute;
+  font-family: "Hello", sans-serif;
+  font-size: 190px;
+  line-height: 0;
+}
+
+.pic {
+  position: relative;
+
+  &__ove {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    position: absolute;
+    font-family: "Hello";
+    display: none;
+  }
+}
+
+@media (min-width: var.$laptop) {
+  .main {
+    &__img-container {
+      max-height: 70vh;
+    }
+
+    &__love {
+        font-size: 130px;
+    }
+  }
+
+  .pic {
+    &__title {
+      display: block;
+      font-size: 70px;
+    }
+
+    &__ove {
+      .pic__title {
+        bottom: 29%;
+        right: 70%;
+      }
+    }
+
+    &__stasya {
+      .pic__title {
+        top: 0;
+        left: 62%;
+      }
+    }
+  }
+}
+
+@media (min-width: var.$desktop) {
+    .pic {
+
+    &__title {
+      font-size: 130px;
+    }
+
+    &__ove {
+      .pic__title {
+        right: 56%;
+      }
+    }
+
+    &__stasya {
+      .pic__title {
+        left: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: var.$wide) {
+    .pic {
+
+    &__title {
+      font-size: 170px;
+    }
+
+    &__ove {
+      .pic__title {
+        right: 56%;
+      }
+    }
+
+    &__stasya {
+      .pic__title {
+        left: 50%;
+      }
+    }
+  }
+}
+
+

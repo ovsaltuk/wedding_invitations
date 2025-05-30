@@ -1,0 +1,50 @@
+.location {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  color: white;
+  background-color: #970020;
+
+  &__title {
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-family: "Hello";
+    font-size: 34px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__where {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &-place {
+      font-family: "Hello";
+      font-size: 32px;
+
+      img {
+        width: 34px;
+        transform: scale(-1, 1);
+      }
+    }
+
+    &-address {
+      display: flex;
+      flex-direction: column;
+      font-weight: 300;
+      font-size: 12px;
+    }
+  }
+}
