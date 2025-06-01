@@ -7,6 +7,9 @@
   justify-content: space-between;
   min-height: 100vh;
   background-image: url("/background_paper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   overflow: hidden;
 
   &__title {
@@ -59,7 +62,7 @@
     }
 
     &__love {
-        font-size: 130px;
+      font-size: 130px;
     }
   }
 
@@ -86,8 +89,7 @@
 }
 
 @media (min-width: var.$desktop) {
-    .pic {
-
+  .pic {
     &__title {
       font-size: 130px;
     }
@@ -95,6 +97,7 @@
     &__ove {
       .pic__title {
         right: 56%;
+        bottom: 50%
       }
     }
 
@@ -107,8 +110,7 @@
 }
 
 @media (min-width: var.$wide) {
-    .pic {
-
+  .pic {
     &__title {
       font-size: 170px;
     }
@@ -126,5 +128,3 @@
     }
   }
 }
-
-
