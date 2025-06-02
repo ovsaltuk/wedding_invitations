@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import where from "/where.png";
-import atmosphere from "/atmosphere.svg";
+import atmosphere from "/atmosphere.png";
 import lagomImg1 from "/carusel/1.jpg";
 import lagomImg2 from "/carusel/2.png";
 import lagomImg3 from "/carusel/3.jpg";
@@ -24,7 +24,7 @@ export const LocationSection: FC = () => {
                             КОГДА МЫ РАЗМЫШЛЯЛИ О ТОМ, КАК ОТМЕТИТЬ НАШУ СВАДЬБУ, ПОНЯЛИ, ЧТО МЕЧТАЕМ ПРОВЕСТИ ЭТО ВРЕМЯ
                             В КРУГУ САМЫХ БЛИЗКИХ НАМ ЛЮДЕЙ
                         </h2>
-                        <span className="crossed">Но потом передумали и решили с вами</span>
+                        <span className="crossed">но потом передумали и решили с вами</span>
                         <span className="location__subtitle">в лесу</span>
                     </div>
                 </div>

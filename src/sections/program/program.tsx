@@ -1,10 +1,10 @@
 import type { FC } from "react";
 import mainImg from "/program-main-img.jpg";
-import program from "/program.svg";
-import heart from "/heart.svg";
-import dressCode from "/dress-code.svg";
-import nice from "/nice.svg";
-import bed from "/bed.svg";
+import program from "/program.png";
+import heart from "/heart.png";
+import dressCode from "/dress-code.png";
+import nice from "/nice.png";
+import bed from "/bed.png";
 import oveStasya from "/oveStasya.png";
 import "./styles.scss";
 
@@ -101,7 +101,7 @@ export const ProgramSection: FC = () => {
             <img src={dressCode} alt="dressCode" />
             <img src={bed} alt="bed" />
             <img src={nice} alt="nice" />
-            <img src={oveStasya} alt="oveStasya" />
+            <img src={oveStasya} alt="oveStasya" className="ove-stasya"/>
         </div>
     </section>)
 }
